@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loopstudios-landing-page</title>
+    <link rel="stylesheet" href="./loopstudios.css">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@200&family=Montserrat:ital,wght@1,200&family=Poppins:wght@100&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- first container  -->
+    <header>
+        <nav>
+            <div class="leftNav"><img src="./imgss/loopstudiosLogo.svg" alt="" class="loopstudiosLogo"></div>
+            <div class="rightNav">
+                <ul class="navList">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Events</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Support</a></li>
+                    <!-- <button class="hamburger" data-model-target="#model"><img src="./imgss/hamburger.svg" alt=""></button> -->
+
+                    <button class="hamburger" onclick="openModal()" ><img src="./imgss/hamburger.svg" alt=""></button>
+
+                </ul>
+
+            </div>
+            
+        </nav>
+        <h1 class="heading">
+            Immersive experiences that deliver
+        </h1>
+    </header>
+    
+    <!-- for modal,like popup msg -->
+
+
+    <div class="modal" id="modal">
+        <div class="modalHeader">
+            <img src="./imgss/loopstudiosLogo.svg" alt="" class="modalLogo">
+            <button   onclick="closeModal()" class="closeButton">&times;</button>
+            
+            <!-- <button   data-closeButton class="closeButton">&times;</button> -->
+
+        </div>
+        <ul class="modalList">
+            <li><a href="">About</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Support</a></li>
+        </ul>
+    </div>
+    <!-- second Container -->
+
+    <div class="secondContainer">
+        
+            <div class="secondContainerImg"></div>
+          
+        
+        <div class="secondContainerDescription">
+            <h1 class="containerHeading">The leader in interactive VR</h1>
+            <p class="secondContainerContent">Founded in 2011, Loopstudios has been producing world-class virtual
+                reality projects for some of the best companies around the globe. Our award-winning creations have
+                transformed businesses through digital experiences that bind to their brand.</p>
+
+        </div>
+    </div>
+    <!-- third container  -->
+
+    <div class="thirdContainer">
+        <div class="thirdContainerHeading">
+            <h1 class="containerHeading third">OUR CREATIONS</h1>
+            <button class="button">See All</button>
+        </div>
+        <div class="templetCards">
+            
+            <div  class="card earthCard"><div class="cardDetails">DEEP EARTH</div></div>
+            <div class="card nightArcadeCard"><div class="cardDetails">NIGHT ARCADE</div></div>
+            <div class="card soccerTeamCard"><div class="cardDetails">SOCCER TEAM VR</div></div>
+            <div class="card theGridCard"><div class="cardDetails">THE <br>GRID</div></div>
+            <div class="card fromUpAboveCard"><div class="cardDetails">FROM UP ABOVE VR</div></div>
+            <div class="card pocketBorealisCard"><div class="cardDetails">POCKET BOREALIS</div></div>
+            <div class="card curiosityCard"><div class="cardDetails">THE CURIOSITY</div></div>
+            <div class="card fishEyeCard"><div class="cardDetails">MAKE IT FISHEYE</div></div>
+            <button class="reponsiveBtn">See All</button>
+        </div>
+        
+    </div>
+    
+    <!-- footer  -->
+    <footer>
+        <div class="leftFooter">
+            <div class="endLoopstudiosLogo"><img src="./imgss/loopstudiosLogo.svg" alt=""  class="endLogo"></div>
+            <ul class="footerList">
+                <li><a href="">About</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Events</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Support</a></li>
+            </ul>   
+        </div>
+        <div class="rightFooter"> 
+            <div><img src="./imgss/logos.svg" alt="" class="logos"></div>
+            <div class="copyRights">
+
+                <p>© 2021 Loopstudios. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./loopstudios.js"></script>
+</body>
+
+</html>
